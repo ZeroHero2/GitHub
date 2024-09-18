@@ -4,9 +4,27 @@ name: Primer Workflow
 on: [push]
 
 jobs:
+#Creamos nuestro step llamado hola
   hola:
+  #Indicamos la version de ubuntu a utilizar en el servidor
     runs-on: ubuntu-latest
-
+# Creamos nuestra accion a realizar y corremos el comando
     steps:
     - name: Hola mundo
       run: echo "Hola mundo"
+    
+    - name: touch file
+      run: touch hola.txt
+    
+    - name: Set text
+      run: echo "Hola Mundo" >> hola.txt
+
+    -name: Read file
+      run: cat hola.txt
+
+  other:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: LS
+      run: ls-al
