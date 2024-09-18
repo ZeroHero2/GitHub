@@ -1,0 +1,12 @@
+# Nombre del workflow
+name: Primer Workflow
+# Indicamos que se realiza cuando hago un push
+on: [push]
+
+jobs:
+  hola:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Hola mundo
+    run: echo "Hola mundo"
