@@ -9,4 +9,4 @@ jobs:
 
     steps:
     - name: Hola mundo
-    run: echo "Hola mundo"
+      run: echo "Hola mundo"
