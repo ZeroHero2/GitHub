@@ -2,7 +2,10 @@
 name: Primer Workflow
 # Indicamos que se realiza cuando hago un push
 on: [push]
-
+  #push:
+   # branches:
+      #- main
+      #- rama
 jobs:
 #Creamos nuestro step llamado hola
   hola:
@@ -28,5 +31,8 @@ jobs:
     needs: [hola]
 
     steps:
+    - name: Checkout 
+      uses: actions/checkout@v4
+
     - name: LS
       run: ls -al
