@@ -1,0 +1,9 @@
+person:
+  name: Jhon
+  age: 30
+  city: New York
+
+items:
+  - item1
+  - item2
+  - item3
