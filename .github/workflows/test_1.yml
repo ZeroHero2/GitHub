@@ -24,7 +24,9 @@ jobs:
 
   other:
     runs-on: ubuntu-latest
+# Indicamos que necesita al step hola antes de iniciar
+    needs: [hola]
 
     steps:
     - name: LS
-      run: ls-al
+      run: ls -al
